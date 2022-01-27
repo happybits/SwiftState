@@ -21,10 +21,11 @@ let package = Package(
         .target(
             name: "SwiftState",
             dependencies: [],
-            path:"Sources"),
+            path:"Sources",
+            exclude: ["Info.plist"]),
         .testTarget(
             name: "SwiftStateTests",
             dependencies: ["SwiftState"],
-            path:"Sources"),
+            exclude: ["Info.plist"]),
     ]
 )
